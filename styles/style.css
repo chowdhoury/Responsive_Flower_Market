@@ -227,4 +227,19 @@ nav > ul li:last-child a{
         padding-left: 16px;
         padding-right: 16px;
     }
+    .plant-lover{
+        margin-top: 40px;
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .plant-lover-details ul{
+        margin-left: 20px;
+    }
+    .back-img{
+        width: 100%;
+    }
+    .plant-lover-title{
+        margin-top: -40px;
+    }
 }
