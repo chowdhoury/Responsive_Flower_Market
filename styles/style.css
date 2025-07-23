@@ -146,6 +146,42 @@ nav > ul li:last-child a{
     width: 100%;
 }
 
+/* Plant Lover */
+.plant-lover{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-top: 210px;
+}
+.back-img{
+    max-width: 540px;
+    max-height: 597px;
+}
+.plant-lover-details{
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.plant-lover-details ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.plant-lover-details ul li::marker{
+    color: var(--light-black);
+}
+.painful-figure{
+    position: relative;
+}
+.trusted-seller{
+    max-width: 269px;
+    max-height: 269px;
+    position: absolute;
+    right: -90px;
+    top: -120px;
+}
+
 
 
 
