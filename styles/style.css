@@ -19,6 +19,13 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+.noto-serif-regular{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 
 /* Shared Style  */
@@ -31,6 +38,26 @@
 }
 body{
     background-color: #F5F8FF;
+}
+.section-title{
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: var(--black);
+}
+.title-differ-color{
+    color: var(--primary-color);
+}
+.description{
+    font-size: 1.375rem;
+    color: var(--light-black);
+}
+.primary-btn{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    padding: 19px 80px;
+    background-color: var(--primary-color);
+    border: none;
 }
 
 /* Nav Section  */
@@ -64,6 +91,61 @@ nav > ul li:last-child a{
     color: var(--black);
 }
 
+/* Banner Section  */
+.banner{
+    display: flex;
+    align-items: end;
+    padding-top: 106px;
+}
+.banner img{
+    max-width: 50%;
+}
+.banner-title{
+    color: var(--black);
+    font-size: 4.0625rem;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+/* Our Plants  */
+.our-plants{
+    text-align: center;
+    justify-items: center;
+}
+.our-plants-description{
+    max-width: 888px;
+    margin-top: 16px;
+}
+.plant-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+.plant-card{
+
+}
+.plant-card img{
+    width: 100%;
+}
+.card-title{
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: #111111;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.card-price{
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 30px;
+}
+
+
+
+
 
 /* Responsive Layout */
 @media screen and (max-width:576px) {
@@ -80,5 +162,18 @@ nav > ul li:last-child a{
     #navbar{
         margin-left: 16px;
         margin-right: 16px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        padding-top: 0;
+        margin-top: 28px;
+    }
+    .banner img{
+        max-width: 100%;
+    }
+    .banner-details{
+        margin-top: 23px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
