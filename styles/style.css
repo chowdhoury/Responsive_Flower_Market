@@ -266,6 +266,7 @@ nav > ul li:last-child a {
 /* Join the colorful Bunch */
 .join-section {
   background-image: url("../assets/news-letter-bg.png");
+  background-size: cover;
   justify-items: center;
   align-content: center;
   height: 530px;
