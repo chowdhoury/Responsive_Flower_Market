@@ -14,7 +14,7 @@
 
 /* Font  */
 
-.inter-regular {
+.inter-regular,#email::placeholder {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -193,6 +193,46 @@ nav > ul li:last-child a{
     filter:  drop-shadow(-4px 7px 0px rgba(0, 0, 0, 0.15));
 }
 
+/* Latest Deals  */
+latest-deal{
+
+}
+
+/* Join the colorful Bunch */
+.join-section{
+    background-image: url("../assets/news-letter-bg.png");
+    justify-items: center;
+    align-content: center;
+    height: 530px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+#ami-kala{
+    color: white;
+    margin-bottom: 23px;
+}
+form{
+    display: flex;
+    align-items: center;
+    max-width: 750px;
+    width: 100%;
+}
+#email{
+    width: 80%;
+    border: none;
+    height: 50px;
+}
+#email::placeholder{
+    font-size: 1rem;
+    color: var(--light-black);
+    padding-left: 20px;
+}
+#submit{
+    width: 20%;
+    height: 50px;
+    padding: 0px;
+}
 
 
 
@@ -252,5 +292,15 @@ nav > ul li:last-child a{
     }
     .plant-lover-title{
         margin-top: -40px;
+    }
+    form{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    #email{
+        width: 60%;
+    }
+    #submit{
+        width: 40%;
     }
 }
