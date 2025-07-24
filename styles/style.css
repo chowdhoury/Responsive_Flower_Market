@@ -1,373 +1,465 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Color  */
-:root{
-    --primary-color:#E95A08;
-    --black:#000000;
-    --light-black:rgba(0, 0, 0, 0.5);
-    --gray:#6B7280; 
+:root {
+  --primary-color: #e95a08;
+  --black: #000000;
+  --light-black: rgba(0, 0, 0, 0.5);
+  --gray: #6b7280;
 }
 
 /* Font  */
 
-.inter-regular,#email::placeholder {
+.inter-regular,
+#email::placeholder {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
-.noto-serif-regular{
+.noto-serif-regular {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
-
 
 /* Shared Style  */
-.section-width{
-    max-width: 1140px;
-    margin: auto;
+.section-width {
+  max-width: 1140px;
+  margin: auto;
 }
-.section-top-margin{
-    margin-top: 120px;
+.section-top-margin {
+  margin-top: 120px;
 }
-body{
-    background-color: #F5F8FF;
+body {
+  background-color: #f5f8ff;
 }
-.section-title{
-    font-size: 3.125rem;
-    font-weight: 700;
-    color: var(--black);
+.section-title {
+  font-size: 3.125rem;
+  font-weight: 700;
+  color: var(--black);
 }
-.title-differ-color{
-    color: var(--primary-color);
+.title-differ-color {
+  color: var(--primary-color);
 }
-.description{
-    font-size: 1.375rem;
-    color: var(--light-black);
+.description {
+  font-size: 1.375rem;
+  color: var(--light-black);
 }
-.primary-btn{
-    font-size: 1rem;
-    font-weight: 600;
-    color: white;
-    padding: 19px 0px;
-    background-color: var(--primary-color);
-    border: none;
+.primary-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  padding: 19px 0px;
+  background-color: var(--primary-color);
+  border: none;
 }
 
 /* Nav Section  */
-header{
-    margin-top: 30px;
+header {
+  margin-top: 30px;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-nav img{
-    max-width: 135px;
-    height: 82px;
+nav img {
+  max-width: 135px;
+  height: 82px;
 }
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 48px;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 48px;
 }
-nav ul a{
-    text-decoration: none;
-    font-size: 1rem;
-    color: #8987A1;
+nav ul a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #8987a1;
 }
-nav > ul li:first-child a{
-    color: #252432;
-    font-weight: 700;
+nav > ul li:first-child a {
+  color: #252432;
+  font-weight: 700;
 }
-nav > ul li:last-child a{
-    color: var(--black);
+nav > ul li:last-child a {
+  color: var(--black);
 }
 
 /* Banner Section  */
-.banner{
-    display: flex;
-    align-items: end;
-    padding-top: 106px;
+.banner {
+  display: flex;
+  align-items: end;
+  padding-top: 106px;
 }
-.banner img{
-    max-width: 50%;
+.banner img {
+  max-width: 50%;
 }
-.banner-title{
-    color: var(--black);
-    font-size: 4.0625rem;
-    font-weight: 700;
-    margin-bottom: 13px;
+.banner-title {
+  color: var(--black);
+  font-size: 4.0625rem;
+  font-weight: 700;
+  margin-bottom: 13px;
 }
 
 /* Our Plants  */
-.our-plants{
-    text-align: center;
-    justify-items: center;
+.our-plants {
+  text-align: center;
+  justify-items: center;
 }
-.our-plants-description{
-    max-width: 888px;
-    margin-top: 16px;
+.our-plants-description {
+  max-width: 888px;
+  margin-top: 16px;
 }
-.plant-container{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    row-gap: 30px;
-    column-gap: 20px;
+.plant-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  column-gap: 20px;
 }
-.plant-card{
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+.plant-card {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
-.plant-card img{
-    width: 100%;
+.plant-card img {
+  width: 100%;
 }
-.card-title{
-    font-size: 1.375rem;
-    font-weight: 500;
-    color: #111111;
-    margin-top: 30px;
-    margin-bottom: 20px;
+.card-title {
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: #111111;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
-.card-price{
-    font-size: 1.375rem;
-    font-weight: 700;
-    color: #111111;
-    margin-bottom: 30px;
+.card-price {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 30px;
 }
-.plant-card button{
-    width: 100%;
+.plant-card button {
+  width: 100%;
 }
 
 /* Plant Lover */
-.plant-lover{
-    display: flex;
-    gap: 60px;
-    align-items: center;
-    margin-top: 210px;
+.plant-lover {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  margin-top: 210px;
 }
-.back-img{
-    max-width: 540px;
-    max-height: 597px;
+.back-img {
+  max-width: 540px;
+  max-height: 597px;
 }
-.plant-lover-details{
-    max-width: 540px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.plant-lover-details {
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.plant-lover-details ul{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.plant-lover-details ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.plant-lover-details ul li::marker{
-    color: var(--light-black);
+.plant-lover-details ul li::marker {
+  color: var(--light-black);
 }
-.painful-figure{
-    position: relative;
+.painful-figure {
+  position: relative;
 }
 @keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(-360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
 }
-.trusted-seller{
-    max-width: 269px;
-    max-height: 269px;
-    position: absolute;
-    right: -90px;
-    top: -120px;
-    animation: spin 120s linear infinite;
-    /* box-shadow: -4px 10px 4px 0px rgba(0, 0, 0, 0.25); */
-    filter:  drop-shadow(-4px 7px 0px rgba(0, 0, 0, 0.15));
+.trusted-seller {
+  max-width: 269px;
+  max-height: 269px;
+  position: absolute;
+  right: -90px;
+  top: -120px;
+  animation: spin 120s linear infinite;
+  /* box-shadow: -4px 10px 4px 0px rgba(0, 0, 0, 0.25); */
+  filter: drop-shadow(-4px 7px 0px rgba(0, 0, 0, 0.15));
 }
 
 /* Latest Deals  */
-latest-deal{
+.latest-deals-head {
+  text-align: center;
+  justify-items: center;
+}
+.latest-deals-head p {
+  max-width: 888px;
+  margin-top: 16px;
+}
 
+/* Image Grid  */
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 28px;
+  row-gap: 25px;
+  grid-auto-flow: column;
+}
+.image-grid div {
+  align-content: center;
+  justify-items: center;
+}
+#zabo-plant {
+  grid-row: span 2;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/deal-zabo.png");
+  border-radius: 22px;
+  background-size: cover;
+}
+#zabo-plant h4 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+#zabo-plant a {
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.bloom-plant,
+.ana-plant {
+  height: 200px;
+  border-radius: 12px;
+}
+.bloom-plant h4,
+.ana-plant h4 {
+  font-weight: 700;
+  font-size: 1.375rem;
+  color: white;
+  margin-bottom: 10px;
+}
+.bloom-plant a,
+.ana-plant a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+.ana-plant {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/deal-ana.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bloom-plant {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/deal-bloom.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Join the colorful Bunch */
-.join-section{
-    background-image: url("../assets/news-letter-bg.png");
-    justify-items: center;
-    align-content: center;
-    height: 530px;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
+.join-section {
+  background-image: url("../assets/news-letter-bg.png");
+  justify-items: center;
+  align-content: center;
+  height: 530px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
 }
-#ami-kala{
-    color: white;
-    margin-bottom: 23px;
+#ami-kala {
+  color: white;
+  margin-bottom: 23px;
 }
-form{
-    display: flex;
-    align-items: center;
-    max-width: 750px;
-    width: 100%;
+form {
+  display: flex;
+  align-items: center;
+  max-width: 750px;
+  width: 100%;
 }
-#email{
-    width: 80%;
-    border: none;
-    height: 50px;
+#email {
+  width: 80%;
+  border: none;
+  height: 50px;
 }
-#email::placeholder{
-    font-size: 1rem;
-    color: var(--light-black);
-    padding-left: 20px;
+#email::placeholder {
+  font-size: 1rem;
+  color: var(--light-black);
+  padding-left: 20px;
 }
-#submit{
-    width: 20%;
-    height: 50px;
-    padding: 0px;
+#submit {
+  width: 20%;
+  height: 50px;
+  padding: 0px;
 }
-
 
 /* Footer Section  */
-footer{
-    display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
+footer {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* Company Section  */
-.site-info,.social-links{
-    width: 30%;
+.site-info {
+  width: 30%;
 }
-.site-info p{
-    margin-top: 10px;
-    max-width: 320px;
+.social-links {
+  width: 20%;
+}
+.site-info p {
+  margin-top: 10px;
+  max-width: 320px;
 }
 
 /* Important Links */
-.important-link{
-    display: flex;
-    width: 40%;
+.important-link {
+  display: flex;
+  width: 50%;
 }
-.important-link div{
-    flex: 1;
-    justify-items: center;
+.important-link div {
+  flex: 1;
+  justify-items: center;
 }
-.important-link ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.important-link ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.important-link li a{
-    text-decoration: none;
-    color: var(--gray);
+.important-link li a {
+  text-decoration: none;
+  color: var(--gray);
 }
 
 /* Social Links */
-.social-links{
-    display: flex;
-    justify-content: end;
-    gap: 20px;
+.social-links {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
 }
-.social-links img{
-    height: 36px;
-    width: 36px;
+.social-links img {
+  height: 36px;
+  width: 36px;
 }
-
-
 
 /* Responsive Layout */
-@media screen and (max-width:576px) {
-    header{
-        margin-top: 13px;
-    }
-    nav img{
-        max-width: 63px;
-        height: 38px;
-    }
-    .display-none{
-        display: none;
-    }
-    #navbar{
-        margin-left: 16px;
-        margin-right: 16px;
-    }
-    .banner{
-        flex-direction: column-reverse;
-        padding-top: 0;
-        margin-top: 28px;
-    }
-    .banner img{
-        max-width: 100%;
-    }
-    .banner-details{
-        margin-top: 23px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    .our-plants{
-        margin-top: 65px;
-    }
-    .our-plants-description{
-        margin-left: 28px;
-        margin-right: 28px;
-    }
-    .plant-container{
-        grid-template-columns: repeat(2,1fr);
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    .plant-lover{
-        margin-top: 40px;
-        flex-direction: column;
-        margin-left: 16px;
-        margin-right: 16px;
-    }
-    .plant-lover-details ul{
-        margin-left: 20px;
-    }
-    .back-img{
-        width: 100%;
-    }
-    .plant-lover-title{
-        margin-top: -40px;
-    }
-    .join-section{
-        margin-top: 45px;
-    }
-    form{
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-    #email{
-        width: 60%;
-    }
-    #submit{
-        width: 40%;
-    }
-    footer,.important-link{
-        flex-direction: column;
-    }
-    footer{
-        padding-left: 20px;
-        gap: 25px;
-    }
-    .social-links,.important-link,.site-info{
-        width: 100%;
-    }
-    .social-links,.important-link div{
-        justify-content: left;
-        justify-items: left;
-    }
-    .important-link{
-        gap: 20px;
-    }
+@media screen and (max-width: 576px) {
+  header {
+    margin-top: 13px;
+  }
+  nav img {
+    max-width: 63px;
+    height: 38px;
+  }
+  .display-none {
+    display: none;
+  }
+  #navbar {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    padding-top: 0;
+    margin-top: 28px;
+  }
+  .banner img {
+    max-width: 100%;
+  }
+  .banner-details {
+    margin-top: 23px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .our-plants {
+    margin-top: 65px;
+  }
+  .our-plants-description {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+  .plant-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .plant-lover {
+    margin-top: 40px;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .plant-lover-details ul {
+    margin-left: 20px;
+  }
+  .back-img {
+    width: 100%;
+  }
+  .plant-lover-title {
+    margin-top: -40px;
+  }
+  .latest-deals-head p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .image-grid {
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    padding-left: 16px;
+    padding-right: 16px;
+    grid-auto-flow: row;
+  }
+  #zabo-plant{
+    height: 200px;
+    border-radius: 12px;
+  }
+  #zabo-plant h4 {
+    font-weight: 700;
+    font-size: 1.375rem;
+  }
+  #zabo-plant a {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .join-section {
+    margin-top: 45px;
+  }
+  form {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  #email {
+    width: 60%;
+  }
+  #submit {
+    width: 40%;
+  }
+  footer,
+  .important-link {
+    flex-direction: column;
+  }
+  footer {
+    padding-left: 20px;
+    gap: 25px;
+  }
+  .social-links,
+  .important-link,
+  .site-info {
+    width: 100%;
+  }
+  .social-links,
+  .important-link div {
+    justify-content: left;
+    justify-items: left;
+  }
+  .important-link {
+    gap: 20px;
+  }
 }
