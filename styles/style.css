@@ -174,12 +174,21 @@ nav > ul li:last-child a{
 .painful-figure{
     position: relative;
 }
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
 .trusted-seller{
     max-width: 269px;
     max-height: 269px;
     position: absolute;
     right: -90px;
     top: -120px;
+    animation: spin 120s linear infinite;
 }
 
 
