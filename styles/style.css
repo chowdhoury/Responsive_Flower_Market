@@ -235,6 +235,53 @@ form{
 }
 
 
+/* Footer Section  */
+footer{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Company Section  */
+.site-info,.social-links{
+    width: 30%;
+}
+.site-info p{
+    margin-top: 10px;
+    max-width: 320px;
+}
+
+/* Important Links */
+.important-link{
+    display: flex;
+    width: 40%;
+}
+.important-link div{
+    flex: 1;
+    justify-items: center;
+}
+.important-link ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.important-link li a{
+    text-decoration: none;
+    color: var(--gray);
+}
+
+/* Social Links */
+.social-links{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+.social-links img{
+    height: 36px;
+    width: 36px;
+}
+
 
 
 /* Responsive Layout */
@@ -293,6 +340,9 @@ form{
     .plant-lover-title{
         margin-top: -40px;
     }
+    .join-section{
+        margin-top: 45px;
+    }
     form{
         padding-left: 35px;
         padding-right: 35px;
@@ -302,5 +352,22 @@ form{
     }
     #submit{
         width: 40%;
+    }
+    footer,.important-link{
+        flex-direction: column;
+    }
+    footer{
+        padding-left: 20px;
+        gap: 25px;
+    }
+    .social-links,.important-link,.site-info{
+        width: 100%;
+    }
+    .social-links,.important-link div{
+        justify-content: left;
+        justify-items: left;
+    }
+    .important-link{
+        gap: 20px;
     }
 }
